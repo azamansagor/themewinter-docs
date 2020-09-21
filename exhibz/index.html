@@ -116,9 +116,29 @@
                                 <a href="#theme-customizer">Theme Customizer</a>
 
                                 <ul class="nav">
-                                    <li><a href="#customizer-navigation">Navigation Setting</a></li>
-                                    <li><a href="#customizer-header-logo">Header logo</a></li>
-                                    <li><a href="#customizer-theme-style">Theme style Settings </a></li>
+                                    <li>
+                                        <a href="#customizer-general-settings">General Settings </a>
+                                        <ul class="nav">
+                                            <li><a href="#general-header-logo">Header logo</a></li>
+                                            <li><a href="#general-breadcrumb">Breadcrumb</a></li>
+                                            <li><a href="#general-social-links">Social Links</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#customizer-theme-style">Theme style Settings </a>
+                                    </li>
+                                    <li>
+                                        <a href="#customizer-header-settings">Header Settings </a>
+                                    </li>
+                                    <li>
+                                        <a href="#customizer-banner-settings">Banner Settings </a>
+                                    </li>
+                                    <li>
+                                        <a href="#customizer-blog-settings">Blog Settings </a>
+                                    </li>
+                                    <li>
+                                        <a href="#customizer-footer-settings">Footer Settings </a>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a href="#visual-page-builder">Visual Page Builder</a>
@@ -127,6 +147,25 @@
                                     <li><a href="#visual-elementor-ui">Elementor UI: Getting to know</a></li>
                                     <li><a href="#visual-section-create">Creating your section</a></li>
                                     <li><a href="#visual-adding-column">Adding columns to sections</a></li>
+                                    <li><a href="#exhibz-widgets">Exhibz Widgets</a>
+                                        <ul class="nav">
+                                            <li><a href="#exhibz-title">Title</a></li>
+                                            <li><a href="#exhibz-features">Feature</a></li>
+                                            <li><a href="#exhibz-speakers">Speakers</a></li>
+                                            <li><a href="#exhibz-speakers-archive">Speakers Archive</a></li>
+                                            <li><a href="#exhibz-schedules">Schedules</a></li>
+                                            <li><a href="#exhibz-countdown">Count Down</a></li>
+                                            <li><a href="#exhibz-pricing">Pricing</a></li>
+                                            <li><a href="#exhibz-latest-news">Latest News</a></li>
+                                            <li><a href="#exhibz-sliders">Exhibz Sliders</a></li>
+                                            <li><a href="#exhibz-date">Date</a></li>
+                                            <li><a href="#exhibz-gallery-sliders">Exhibz Gallery Sliders</a></li>
+                                            <li><a href="#exhibz-speakers-slider">Speakers Slider</a></li>
+                                            <li><a href="#exhibz-meetup">Meetup</a></li>
+                                            <li><a href="#exhibz-testimonial">Exhibz Testimonial</a></li>
+                                            <li><a href="#exhibz-team">Exhibz Team</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a href="#line6">Slug Change</a></li>
@@ -395,7 +434,7 @@
                             <p>Step 4: Once the API connection has been established you will see a list of themes that can be auto installed.</p>
 
                             <h3>How to update the wordpress theme Maually</h3>
-                            <p>Please, follow the doc for better understand : <a href="https://support.xpeedstudio.com/knowledgebase/how-to-update-the-wordpress-theme/">Update Theme maually</a></p>
+                            <p>Please, follow the doc for better understand : <a href="https://support.xpeedstudio.com/knowledgebase/how-to-update-the-wordpress-theme/">Update Theme manually.</a></p>
                         </div>
                     </section>
                     <!-- /Introduction and Quick start guide -->
@@ -406,139 +445,334 @@
 
                         <div class="intro">
                             <h2>Theme Customizer</h2>
+
+                            <p>
+                                Navigate to <b>Appearance > Customize </b> for Theme's customizer settings.
+                            </p>
                             
                             <p class="text-center">
                                 <img src="images/customizer/theme-settings.gif"alt="">
                             </p>
 
-                            <h3 id="customizer-navigation">Navigation Setting</h3>
-                            <p>You can find the all Theme Option from <strong>Appearance -> Customize -> Theme settings</strong></p>
+                            <!-- Customizer General Settings -->
+                            <div id="customizer-general-settings">
+                                <h3>General Settings</h3>
 
-                            <p> From <b>Header</b> Settings, you can add/update your site logo, change menu styles,
-                                header top contact info and social shares, and Burgar menu etc.</p>
-                            <ul>
-                                <li>1. Select one of them style and then </li>
-                                <li>2. Click on Publish</li>
-                            </ul>
+                                <p>From Appearance-> Customize ->Theme settings -> <b>General Settings </b>, you can change
+                                    logo, enable breadcrumb & social links, stick the sidebar etc. </p>
 
-                            <img class="img-responsive" src="images/customizer/navigation.png" alt="" />
-                            <hr />
+                                <div id="general-header-logo">
+                                    <h3>Header logo</h3>
+                                    <p>To change the header logo, go to Appearance > Customize >Theme settings > <b>General
+                                        Settings</b> and scroll down a little bit. <strong>Recommended logo size:</strong> 200px X 50px</p>
 
+                                    <img class="img-responsive" src="images/customizer/theme_general_main_logo.png" alt="Header Logo" />
+                                </div>
 
-                            <h3 id="customizer-header-logo">Header logo</h3>
-                            <p>To change the header logo, go to Appearance > Customize >Theme settings > <b>General
-                                    Settings</b> and scroll down a little bit. Recommended logo size : 200px X 50px</p>
+                                <div id="general-breadcrumb">
+                                    <h3>Breadcrumb</h3>
+                                    <p>To enable the Breadcrumb and change the text length, go to Appearance > Customize >Theme settings > <b>General
+                                        Settings</b> and scroll down a little bit.</p>
+                                    <img class="img-responsive" src="images/customizer/theme_general_breadcrumb.png" alt="Breadcrumbs" />
+                                </div>
 
-                            <img class="img-responsive" src="images/customizer/header-logo.png" alt="" />
-                            <hr />
+                                <div id="general-social-links">
+                                    <h3>Social Links</h3>
+                                    <p>To set the social links, go to Appearance > Customize >Theme settings > <b>General
+                                        Settings</b>, add or edit the social links.</p>
+                                    <img class="img-responsive" src="images/customizer/theme_general_social_links.png" alt="Social Links" />
+                                </div>
+                            </div>
+                            <!-- /Customizer General Settings -->
 
+                            <!-- Customizer Style Settings -->
+                            <div id="customizer-theme-style">
+                                <h3>Theme style Settings</h3>
 
+                                <p>From Appearance-> Customize->Theme settings-> <b>Style Settings </b>, you can change
+                                    the body background color, body text color, font family, font size and also heading fonts etc. </p>
+                                <img class="img-responsive" src="images/customizer/theme_style_settings.png" alt="Theme Style" />
+                            </div>
+                            <!-- /Customizer Style Settings -->
 
-                            <h3 id="customizer-theme-style">Theme style Settings</h3>
+                            <!-- Customizer Header Settings -->
+                            <div id="customizer-header-settings">
+                                <h3>Header Settings</h3>
 
-                            <p>From Appearance-> Customize->Theme settings-> <b>Style Settings </b>, you can change
-                                font family, color, font size and also heading fonts etc. </p>
-                            <img class="img-responsive" src="images/customizer/theme-settings.png" alt="" />
-                            <hr />
+                                <p>From Appearance-> Customize->Theme settings-> <b>Header Settings </b>, you can change header styles, set sticky header , enable search button, CTA button, shopping cart and header top area. </p>
+
+                                <div id="customizer-header-style">
+                                    <p>
+                                        <strong>Header Style</strong>
+                                    </p>
+                                    <p>
+                                        From the header styles, different style's of header can be applicable for all over the site.
+                                    </p>
+                                    <img class="img-responsive" src="images/customizer/theme_header_style_1.png" alt="Header Style" />
+
+                                    <p>
+                                        Sticky header, search button, CTA button, shopping cart and header top area settings can be changed from here.
+                                    </p>
+                                    <img class="img-responsive" src="images/customizer/theme_header_style_2.png" alt="Header Style" />
+
+                                </div>
+                            </div>
+                            <!-- /Customizer Style Settings -->
+
+                            <!-- Customizer Banner Settings -->
+                            <div id="customizer-banner-settings">
+                                <h3>Banner Settings</h3>
+
+                                <p>From Appearance-> Customize->Theme settings-> <b>Banner Settings </b>, you can change the banner title, background, enable/disable breadcrumbs for pages, blog pages and shop page.</p>
+                                <img class="img-responsive" src="images/customizer/theme_banner_settings_1.png" alt="Banner Style" />
+
+                                <p>Click on the settings button and change the banner properties from the settings popup.</p>
+                                <img class="img-responsive" src="images/customizer/theme_banner_settings_2.png" alt="Banner Style" />
+
+                            </div>
+                            <!-- /Customizer Banner Settings -->
+
+                            <!-- Customizer Blog Settings -->
+                            <div id="customizer-blog-settings">
+                                <h3>Blog Settings</h3>
+
+                                <p>From Appearance-> Customize->Theme settings-> <b>Blog Settings </b>, you can change the blog archive page sidebar position.</p>
+                                <img class="img-responsive" src="images/customizer/theme_blog_1.png" alt="Blog Style" />
+
+                                <p>Blog single pages author show/hide and speakers schedule sorting option can be set from here.</p>
+                                <img class="img-responsive" src="images/customizer/theme_blog_2.png" alt="Blog Style" />
+
+                            </div>
+                            <!-- /Customizer Blog Settings -->
+
+                            <!-- Customizer Footer Settings -->
+                            <div id="customizer-footer-settings">
+                                <h3>Footer Settings</h3>
+
+                                <p>From Appearance-> Customize->Theme settings-> <b>Footer Settings </b>, you can change the footer style, set mailchimp subscription form, change footer text and background colors..</p>
+                                <img class="img-responsive" src="images/customizer/theme_footer_1.png" alt="Footer Style" />
+
+                                <p>Mailchimp shortcode can be found from <b>MC4WP -> Form</b>. </p>
+                                <img class="img-responsive" src="images/customizer/theme_footer_2.png" alt="Footer Style" />
+
+                                <p>Footer social settings,copyright texts and back to top can be set from the settings. </p>
+                                <img class="img-responsive" src="images/customizer/theme_footer_3.png" alt="Footer Style" />
+
+                            </div>
+                            <!-- /Customizer Footer Settings -->
+
                         </div>
+                        <hr />
 
                     </section>
 
                     <section id="visual-page-builder" class="section">
-                        <div>
-                            <h2>Visual Page Builder</h2>
-                            <h3 id="visual-accessing-editor">Accessing the editor</h3>
-                            <p>To start working with Elementor, go to the WordPress dashboard. Then, add a new page
-                                by
-                                clicking on Pages > Add New. Then, create a new page and save it with the 'full
-                                width'
-                                template and then click on the 'Edit with Elementor' button. </p>
-                            <img src="images/elementor/page-creation.png" alt="" />
-                            <hr>
 
-                            <h3 id="visual-elementor-ui">Elementor UI: Getting to know the interface</h3>
+                        <h2>Visual Page Builder</h2>
+                        <h3 id="visual-accessing-editor">Accessing the editor</h3>
+                        <p>To start working with Elementor, go to the WordPress dashboard. Then, add a new page
+                            by
+                            clicking on Pages > Add New. Then, create a new page and save it with the 'full
+                            width'
+                            template and then click on the 'Edit with Elementor' button. </p>
+                        <img src="images/elementor/page-creation.png" alt="" />
+                        <hr>
 
-                            <p>
-                                The Elementor page builder includes these main areas:
-                                <br>
-                                1.
-                                <strong>Panel (Top)</strong>: Use the search field to find a widget. <br>
-                                2.
-                                <strong>Widgets / Widget Settings: </strong>Choose a widget and configure it. <br>
-                                3.
-                                <strong>Preview Button: </strong>Enables you to preview the page. Once clicked it
-                                hides/shows the panel. <br>
-                                4.
-                                <strong>Panel (Bottom)</strong>: View page, Go back to Dashboard or Save page. <br>
-                                5.
-                                <strong>Content Area:</strong> Drag &amp; drop widgets and design your page. <br>
-                                6.
-                                <strong>Add New Section / Add Template:</strong> Choose between creating a new
-                                section
-                                or inserting an existing template.
-                            </p>
+                        <h3 id="visual-elementor-ui">Elementor UI: Getting to know the interface</h3>
 
-                            <img src="images/elementor/elements.png" alt="Elementor Builder">
-                            <hr>
-                            <h3 id="visual-section-create">Creating your section</h3>
-                            <p>A section is the most basic element that you can work with. It's the building block
-                                of
-                                every page. A section can be set as full width and spread all over the screen, or
-                                receive the content area width (by default).</p>
-                            <iframe
-                                    width="850"
-                                    height="450"
-                                    src="https://www.youtube.com/embed/joWTUN77hnA"
-                                    frameborder="0"
-                                    allow="autoplay; encrypted-media"
-                                    allowfullscreen>
-                            </iframe>
-                            <br />
-                            <br />
-                            <p>
-                                After you create a section you can drag and drop a widget inside. You can also
-                                divide each section to few columns. Every page you create can contain as many
-                                sections as you want. You can drag a section above or under another one to relocate
-                                it.
-                                <ol>
-                                    <li>Add New Section: Click this button to create a new section or simply drag a
-                                        widget from the panel and drop it in the content area. </li>
-                                    <li>
-                                        Select Yout Structure: Choose a structure for your section (Later, you can
-                                        edit the exact width of every column).
-                                    </li>
-                                </ol>
-                                    You can edit, duplicate or delete a section. You can also save it as a template
-                                    or add a new section above.
-                            </p>
-                            <img id="visual-adding-column" src="images/elementor/elements_section.png" alt="Elementor Section">
-                        </div>
-                    </section>
-                        <section>
-                            <div class="intro-content" id="line4_4">
-                                <h3>Inserting a widget </h3>
-                                <br>
-                                <p>Click the content to edit, duplicate or delete a widget. You can also save it as a
-                                    Global Widget. Add Widget: Drag a widget from the left panel and drop it into a
-                                    column.</p>
+                        <p>
+                            The Elementor page builder includes these main areas:
+                            <br>
+                            1.
+                            <strong>Panel (Top)</strong>: Use the search field to find a widget. <br>
+                            2.
+                            <strong>Widgets / Widget Settings: </strong>Choose a widget and configure it. <br>
+                            3.
+                            <strong>Preview Button: </strong>Enables you to preview the page. Once clicked it
+                            hides/shows the panel. <br>
+                            4.
+                            <strong>Panel (Bottom)</strong>: View page, Go back to Dashboard or Save page. <br>
+                            5.
+                            <strong>Content Area:</strong> Drag &amp; drop widgets and design your page. <br>
+                            6.
+                            <strong>Add New Section / Add Template:</strong> Choose between creating a new
+                            section
+                            or inserting an existing template.
+                        </p>
+
+                        <img src="images/elementor/elements.png" alt="Elementor Builder">
+                        <hr>
+                        <h3 id="visual-section-create">Creating your section</h3>
+                        <p>A section is the most basic element that you can work with. It's the building block
+                            of
+                            every page. A section can be set as full width and spread all over the screen, or
+                            receive the content area width (by default).</p>
+                        <iframe
+                                width="850"
+                                height="450"
+                                src="https://www.youtube.com/embed/joWTUN77hnA"
+                                frameborder="0"
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                        </iframe>
+                        <br />
+                        <br />
+                        <p>
+                            After you create a section you can drag and drop a widget inside. You can also
+                            divide each section to few columns. Every page you create can contain as many
+                            sections as you want. You can drag a section above or under another one to relocate
+                            it.
+                            <ol>
+                                <li>Add New Section: Click this button to create a new section or simply drag a
+                                    widget from the panel and drop it in the content area. </li>
+                                <li>
+                                    Select Yout Structure: Choose a structure for your section (Later, you can
+                                    edit the exact width of every column).
+                                </li>
+                            </ol>
+                                You can edit, duplicate or delete a section. You can also save it as a template
+                                or add a new section above.
+                        </p>
+                        <img id="visual-adding-column" src="images/elementor/elements_section.png" alt="Elementor Section">
+
+                        <h3 class="intro-content" id="line4_4">Inserting a widget  </h3>
+                        <br>
+                        <p>Click the content to edit, duplicate or delete a widget. You can also save it as a
+                            Global Widget. Add Widget: Drag a widget from the left panel and drop it into a
+                            column.</p>
+                        <p>
+                            1. To edit a widget, click the pencil icon.
+                            <br>
+                            2. On the Panel header, you can choose to edit the widget's content and style.
+                            <br>
+                            3. Every widget has a different setting.&nbsp;
+                            <br>
+                            4. You can save your current changes at any stage.
+                            <br>
+                            5. When you have finished designing, click the 'X' button at the bottom panel and
+                            view the page.
+                        </p>
+                        <img src="images/elementor/elements_widget.png" alt="Elementor Widget">
+
+                        <!-- Exhibz Widgets -->
+                        <div id="exhibz-widgets">
+                            <h3>Exhibz Widgets</h3>
+                            <p>Edit a page with elementor and find the Exhibz widgets section for the list of widgets included with Exhibz Theme.</p>
+                            <img src="images/elementor/widgets/exhibz_widgets.png" alt="">
+                            <hr/>
+
+                            <div id="exhibz-title">
                                 <p>
-                                    1. To edit a widget, click the pencil icon.
-                                    <br>
-                                    2. On the Panel header, you can choose to edit the widget's content and style.
-                                    <br>
-                                    3. Every widget has a different setting.&nbsp;
-                                    <br>
-                                    4. You can save your current changes at any stage.
-                                    <br>
-                                    5. When you have finished designing, click the 'X' button at the bottom panel and
-                                    view the page.
+                                    <strong>Title</strong>
                                 </p>
-                                <img src="images/elementor/elements_widget.png" alt="Elementor Widget">
-
+                                <img src="images/elementor/widgets/title.png" alt="Title">
                             </div>
-                            <hr>
-                        </section>
 
+                            <div id="exhibz-features">
+                                <p>
+                                    <strong>Feature</strong>
+                                </p>
+                                <img src="images/elementor/widgets/features.png" alt="Features">
+                            </div>
+
+                            <div id="exhibz-speakers">
+                                <p>
+                                    <strong>Speakers</strong>
+                                </p>
+                                <img src="images/elementor/widgets/speakers.png" alt="Speakers">
+                            </div>
+
+                            <div id="exhibz-speakers-archive">
+                                <p>
+                                    <strong>Speakers Archive</strong>
+                                </p>
+
+                                <img src="images/elementor/widgets/speakers-archive.png" alt="Speakers Archive">
+                            </div>
+
+                            <div id="exhibz-schedules">
+                                <p>
+                                    <strong>Schedules</strong>
+                                </p>
+                                <img src="images/elementor/widgets/scheduels.png" alt="Schedules">
+                            </div>
+
+                            <div id="exhibz-countdown">
+                                <p>
+                                    <strong>Count Down</strong>
+                                </p>
+                                <img src="images/elementor/widgets/countdown.png" alt="Countdown">
+                            </div>
+
+                            <div id="exhibz-pricing">
+                                <p>
+                                    <strong>Pricing</strong>
+                                </p>
+                                <img src="images/elementor/widgets/pricing.png" alt="Pricing">
+                            </div>
+
+                            <div id="exhibz-latest-news">
+                                <p>
+                                    <strong>Latest News</strong>
+                                </p>
+                                <img src="images/elementor/widgets/latest-news.png" alt="Latest News">
+                            </div>
+
+                            <div id="exhibz-sliders">
+                                <p>
+                                    <strong>Exhibz Sliders</strong>
+                                </p>
+                                <img src="images/elementor/widgets/sliders.png" alt="Sliders">
+                            </div>
+
+                            <div id="exhibz-date">
+                                <p>
+                                    <strong>Date</strong>
+                                </p>
+
+                                <img src="images/elementor/widgets/date.png" alt="Date">
+                            </div>
+
+                            <div id="exhibz-gallery-sliders">
+                                <p>
+                                    <strong>Exhibz Gallery Sliders</strong>
+                                </p>
+
+                                <img src="images/elementor/widgets/gallery-sliders.png" alt="Gallery Sliders">
+                            </div>
+
+                            <div id="exhibz-speakers-slider">
+                                <p>
+                                    <strong>Speakers Slider</strong>
+                                </p>
+                                <img src="images/elementor/widgets/speakers-slider.png" alt="Speakers Slider">
+                            </div>
+
+                            <div id="exhibz-meetup">
+                                <p>
+                                    <strong>Meetup</strong>
+                                </p>
+                                <img src="images/elementor/widgets/meetup.png" alt="Meetup">
+                            </div>
+
+                            <div id="exhibz-testimonial">
+                                <p>
+                                    <strong>Exhibz Testimonial</strong>
+                                </p>
+                                <img src="images/elementor/widgets/testimonial.png" alt="Testimonial">
+                            </div>
+
+
+                            <div id="exhibz-team">
+                                <p>
+                                    <strong>Exhibz Team</strong>
+                                </p>
+                                <img src="images/elementor/widgets/team.png" alt="Team">
+                            </div>
+                        </div>
+                        <!-- /Exhibz Widgets -->
+
+                    </section>
 
 
                         <section id="line6" class="section">
