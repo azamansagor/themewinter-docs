@@ -6,8 +6,9 @@
 <html lang="en">
 <!--<![endif]-->
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -43,17 +44,14 @@
 <body>
 
     <div id="wrapper">
-
         <div class="container">
-
             <section id="top" class="section docs-heading">
-
                 <div class="row">
                     <div class="col-md-12">
                         <div class="big-title text-center">
                             <a href="http://demo.themewinter.com/wp/privsa/" target="_blank"><img src="images/logo.png" alt="Privsa"></a>
                             <h1>Documentation for Privsa - Lawyer & Attorney Business WordPress Theme</h1>
-                            <p class="lead">Privsa / Theme documentation version 1.0</p>
+                            <p class="lead">Privsa / Theme documentation version 1.7</p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -87,15 +85,47 @@
                                 <a href="#line3">Theme Customizer</a>
 
                                 <ul class="nav">
-                                    <li><a href="#line3_1">Navigation Setting</a></li>
-                                    <li><a href="#line3_2">Header logo</a></li>
-									 <li><a href="#line3_2_1_1">Footer logo</a></li>
-                                    <li><a href="#line3_2_1">Header Offcanvas </a></li>
-                                    <li><a href="#line3_3">Theme style Settings </a></li>
-                                    <li><a href="#line44_44">Theme header Settings </a></li>
-                                    <li><a href="#line55_55">Theme banner Settings </a></li>
-                                    <li><a href="#line3_4">Theme blog Settings </a></li>
-                                    <li><a href="#line77_77">Footer Settings </a></li>
+                                    <li>
+                                        <a href="#theme-general-settings">General Setting</a>
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="#theme-header-logo">Header Logo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme-social-links">Social Links</a>
+                                            </li>
+                                        </ul>
+                                    <li><a href="#theme-banner-settings">Banner Settings</a></li>
+                                    <li><a href="#theme-style-settings">Style Settings</a></li>
+                                    <li><a href="#theme-header-settings">Header Settings</a></li>
+                                    <li>
+                                        <a href="#hf-builder">ElementsKit Header Footer Builder</a>
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="#hf-template">ElementsKit Templates</a>
+                                            </li>
+                                            <li>
+                                                <a href="#e-header">ElementsKit Headers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#e-footer">ElementsKit Footers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#e-header-l">Header Logo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#e-header-l-mobile">Header Mobile Logo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#e-header-offcanvas">Header Offcanvas</a>
+                                            </li>
+                                            <li>
+                                                <a href="#e-footer-logo">Footer Logo</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#theme-blog-settings">Blog Settings</a></li>
+                                    <li><a href="#theme-footer-settings">Footer Settings</a></li>
                                 </ul>
                             </li>
                             <li><a href="#line4">Visual Page Builder</a>
@@ -141,13 +171,11 @@
                                         <div class="intro1">
                                             <ul>
                                                 <li><strong>Item Name : </strong>Privsa - Lawyer & Attorney Business WordPress Theme</li>
-                                                <li><strong>Item Version : </strong> V 1.0</li>
+                                                <li><strong>Item Version : </strong> V 1.7</li>
                                                 <li><strong>Author : </strong> <a
                                                         href="https://themeforest.net/user/tripples"
                                                         target="_blank">Tripples</a></li>
-                                                <li><strong>Support via Email : </strong> <a
-                                                        href="mailto:tripplesworld@gmail.com">tripplesworld@gmail.com</a>
-                                                </li>
+                                                <li><strong>Support : </strong> <a href="https://support.themewinter.com/support-center/" target="_blank">Support Center</a>
                                             </ul>
                                         </div>
 
@@ -286,7 +314,7 @@
                                         <li>Php.ini settings:<br />
                                             <code>upload_max_filesize = 32M<br />
                                                 post_max_size = 48M<br />
-                                                memory_limit = 256M<br />
+                                                memory_limit = 512M<br />
                                                 max_execution_time = 600<br />
                                                 max_input_time = 400</code>
                                         </li>
@@ -368,69 +396,215 @@
                         <hr>
                         <div class="intro-content" id="line3">
                             <h2>Theme Customizer</h2>
+                            <p>Navigate to <strong>Appearance -> Customize -> Theme Settings </strong>, to access the theme customizer.</p>
 
-                            <!-- <h3 id="line3_1">Navigation Setting</h3>
-                            <p>You can find the all Theme Option from <strong>Appearance-> Customize->Theme Settings </strong></p>
+                            <div id="theme-general-settings">
+                                <h3>General Settings</h3>
+                                <p>Navigate to <strong>Appearance > Customize > Theme Settings > General Settings</strong>
+                                    for theme's general settings to change the main logo and social links.</p>
 
-                            <p> From <b>Header</b> Settings, you can change your header style , menu styles,
-                                header top cart button and Burgar menu etc.</p>
-                            <ul>
-                                <li>1. Select one of them style and then </li>
-                                <li>2. Click on Publish</li>
-                            </ul>
+                                <div id="theme-header-logo">
+                                    <p>
+                                        <strong>Header Logo</strong>
+                                    </p>
+                                    <p>Change the main logo from here.</p>
+                                    <img class="img-responsive" src="images/customizer/general-header-logo.png" alt="" />
+                                </div>
 
-                            <img class="img-responsive" src="images/navigation.png" alt="" />
-                            <hr /> -->
+                                <div id="theme-social-links">
+                                    <p>
+                                        <strong>Social Links</strong>
+                                    </p>
+                                    <p>Change the social links from here.</p>
+                                    <img class="img-responsive" src="images/customizer/general-social-links.png" alt="" />
+                                </div>
+
+                            </div>
+
+                            <div id="theme-banner-settings">
+                                <h3>Banner Settings</h3>
+                                <p>
+                                    <strong> Setting Location: </strong>Appearance -> Customize -> Theme Settings -> Banner Settings
+                                </p>
+                                <p>
+                                    Page, Blog, Single Blog, Service, Cases, Team page banner and breadcrumb show/hide, Banner title, text color and banner image settings can be changed from here.
+                                </p>
+
+                                <img src="images/customizer/banner-settings-1.png" alt="Banner Settings">
+                                <hr>
+                                <img src="images/customizer/banner-settings-2.png" alt="Banner Settings">
+                            </div>
+
+                            <div id="theme-style-settings">
+                                <h3>Style Settings</h3>
+                                <p>
+                                    <strong> Setting Location: </strong>Appearance -> Customize -> Theme Settings -> Style Settings
+                                </p>
+                                <p>You can change the body background color, font family, color, font size and also heading fonts etc. </p>
+
+                                <img src="images/customizer/style-settings-1.png" alt="Style Settings">
+                                <hr>
+                                <img src="images/customizer/style-settings-2.png" alt="Style Settings">
+                            </div>
+
+                            <div id="theme-header-settings">
+                                <h3>Header Settings</h3>
+                                <p>
+                                    <code>
+                                        !!! If you are using ElementsKit Header Footer, see the documentation from <a href="#e-header-l">here.</a>
+                                    </code>
+                                </p>
+                                <p>
+                                    <strong> Setting Location: </strong>Appearance -> Customize -> Theme Settings -> Header Settings
+                                </p>
+                                <p>You can change the header style, contact information, show/hide search icon in header, header offcanvas menu settings from here.</p>
+
+                                <p>
+                                    <strong>Header Style</strong>
+                                </p>
+                                <img src="images/customizer/header-style.png" alt="Header Style Settings">
+
+                                <p>
+                                    <strong>Contact Information</strong>
+                                </p>
+                                <img src="images/customizer/header-contact-info.png" alt="Header Contact Info">
+
+                                <p>
+                                    <strong>OffCanvas</strong>
+                                </p>
+                                <img src="images/customizer/header-offcanvas-1.png" alt="Header OffCanvas">
+                                <hr>
+                                <img src="images/customizer/header-offcanvas-2.png" alt="Header OffCanvas">
+                            </div>
+
+                            <div id="hf-builder">
+                                <h3>
+                                    <strong>ElementsKit Header Footer Builder</strong>
+                                </h3>
+                                <p id="hf-template">
+                                    For change and create header footer builder go to ElementsKit ><b> Header Footer</b>
+                                </p>
+                                <img class="img-responsive" src="images/ekit-header-footer/header-footer.png" alt="" />
+
+                                <hr />
+
+                                <div id="e-header">
+                                    <h3>
+                                        ElementsKit Headers
+                                    </h3>
+                                    <img class="img-responsive" src="images/ekit-header-footer/ekit-header.png" alt="Ekit Header" />
+                                    <p>Editing the header with Elementor</p>
+                                    <img class="img-responsive" src="images/ekit-header-footer/ekit-header-with-elementor.png" alt="Ekit Header" />
+
+                                </div>
+
+                                <hr />
+
+                                <div id="e-footer">
+                                    <h3>
+                                        ElementsKit Footers
+                                    </h3>
+                                    <img class="img-responsive" src="images/ekit-header-footer/ekit-footer.png" alt="Ekit Footer" />
+                                    <p>Editing the footer with elementor</p>
+                                    <img class="img-responsive" src="images/ekit-header-footer/ekit-footer-with-elementor.png" alt="Ekit Footer" />
+                                </div>
+
+                                <hr />
+
+                                <div id="e-header-l">
+                                    <h3>
+                                        Header logo Settings
+                                    </h3>
+                                    <p>
+                                        For change logo, navigate to ElementsKit > Header Footer > <b>Headers </b>
+                                    </p>
+                                    <img class="img-responsive" src="images/ekit-header-footer/logo-settings-1.png" alt="" />
+                                    <hr />
+                                    <img class="img-responsive" src="images/ekit-header-footer/logo-settings-2.png" alt="" />
+                                </div>
+
+                                <hr />
+
+                                <div id="e-header-l-mobile">
+                                    <h3>
+                                        Header Mobile Logo
+                                    </h3>
+                                    <img class="img-responsive" src="images/ekit-header-footer/mobile-logo.png" alt="" />
+                                </div>
+
+                                <div id="e-header-offcanvas">
+                                    <h3>Header Offcanvas</h3>
+                                    <p>To edit the Header Offcanvas Menu, go to Dashboard -> Elements kIts > My templates >header 2 > Edit with Elementor</p>
+
+                                    <img class="img-responsive" src="images/ekit-header-footer/header-offcanvas.png" alt="" />
+
+                                    <p>Click on Hamburger -> Edit menu content</p>
+                                    <img class="img-responsive" src="images/ekit-header-footer/header-offcanvas2.png" alt="" />
+                                </div>
+
+                                <div id="e-footer-logo">
+                                    <h3>Footer logo</h3>
+                                    <p>To change the Footer logo, go to Dashboard -> Elements kIts > My templates >Footer > Edit with Elementor</p>
+
+                                    <img class="img-responsive" src="images/ekit-header-footer/footer-logo.png" alt="" />
+                                </div>
+
+                                <hr />
+
+                                <div id="elementskit-intro">
+                                    <h3>
+                                        ElementsKit's Intro
+                                    </h3>
+                                    <p>
+                                        For ElementsKit's Header Footer builder, here is a quick introduction about the basics.
+                                    </p>
+                                    <iframe
+                                            width="850"
+                                            height="450"
+                                            src="https://www.youtube.com/embed/ECFC0QregXg"
+                                            frameborder="0"
+                                            allow="autoplay; encrypted-media"
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+
+                            <div id="theme-blog-settings">
+                                <h3>Blog Settings</h3>
+                                <p>
+                                    <strong> Setting Location: </strong>Appearance -> Customize -> Theme Settings -> Blog Settings
+                                </p>
+
+                                <p>Enable blog Sidebar, show/hide author,category, date, comment etc.</p>
+                                <img class="img-responsive" src="images/customizer/blog-settings-1.png" alt="Blog Settings" />
+                            </div>
+
+                            <div id="theme-footer-settings">
+                                <h3>Footer Settings</h3>
+                                <p>
+                                    <code>
+                                        !!! If you are using ElementsKit Header Footer, see the documentation from <a href="#e-footer">here.</a>
+                                    </code>
+                                </p>
+                                <p>
+                                    <strong> Setting Location: </strong>Appearance -> Customize -> Theme Settings -> Footer Settings
+                                </p>
+
+                                <p>Footer background, copyright text and back to top button can be changed from here.</p>
+                                <img class="img-responsive" src="images/customizer/footer-settings-1.png" alt="Footer Settings" />
+                            </div>
 
 
-                            <h3 id="line3_2">Header logo</h3>
-                            <p>To change the header logo, go to Appearance > Customize >Theme Settings > scroll down a little bit</p>
-
-                            <img class="img-responsive" src="images/header-logo.png" alt="" />
                             <hr />
-							
-							<h3 id="line3_2_1_1">Footer logo</h3>
-                            <p>To change the Footer logo, go to Dashboard -> Elements kIts > My templates >Footer > Edit with Elementor</p>
-
-                            <img class="img-responsive" src="images/footer-logo.png" alt="" />
-                            <hr />
-							
-							
-
-                            <h3 id="line3_2_1">Header Offcanvas</h3>
-                            <p>To edit the Header Offcanvas Menu, go to Dashboard -> Elements kIts > My templates >header 2 > Edit with Elementor</p>
-
-                            <img class="img-responsive" src="images/header-offcanvas.png" alt="" />
-                            <hr />
-                            <p>Click on humburger -> Edit menu content</p>
-                            <img class="img-responsive" src="images/header-offcanvas2.png" alt="" />
-                            <hr />
-                            
 
                             <h3 id="line3_3">Theme style Settings</h3>
 
-                            <p>From Appearance-> Customize-> <b>Theme Setting -> Style Setting </b>, you can change
-                                font family, color, font size and also heading fonts etc. </p>
-                            <img class="img-responsive" src="images/theme-settings.png" alt="" />
-                            <hr />
                             
                             
                             <!-- <h3 id="line44_44">Default Header Settings</h3>
                             <p>From Appearance-> Customize-> <b>Theme Setting -> Header Setting </p>
                             <img class="img-responsive" src="images/customizer/Header-customizer.png" alt="" />
                             <hr /> -->
-                            
-                            <h3 id="line55_55">Theme Banner Settings</h3>
-                            <p>From Appearance-> Customize-> <b>Theme Setting -> Banner Setting </p>
-                            <img class="img-responsive" src="images/customizer/page-banner-customize.png" alt="" />
-                            <hr />
-                            
-                            <h3 id="line3_4">Theme blog Settings</h3>
-
-                            <p>From Appearance-> Customize-> <b>Theme Setting -> Blog Setting </b>, you can change
-                                font family, color, font size and also heading fonts etc. </p>
-                            <img class="img-responsive" src="images/blog-settings.png" alt="" />
-                            <hr />
 
                             <h3 id="line77_77">Theme Footer Settings</h3>
                             <p>From Elements kits-> Footer -> <b>Edit with Elementor->Edit the section you want</p>
@@ -540,14 +714,14 @@
                             <img class="img-responsive" src="images/ementor-header-social.png" alt="" /> -->
                             <hr />
                             <div class="intro-content" id="line4_4">
-                                <h2>Privsa Shortcodes </h2>
+<!--                                <h2>Privsa Shortcodes </h2>-->
                                 <!-- <h3>project and services </h3>
                                 <p>
                                     Those are custom postype. You can add, change, delete from here :
                                 </p>
                                 <img src="images/elementor/custom-shortcode.png" alt=""> -->
                                 
-                                <hr>
+                         
                                 <h2>Elementor add section</h2>
                                 <img src="images/elementor/add-section.png" alt="">
                                 <hr>
@@ -674,9 +848,10 @@
                                         polite
                                         and respectful.</p>
 
-                                    <p>Please visit our <a href="https://themeforest.net/user/tripples"><strong>profile
-                                                page</strong></a> or ask question <a
-                                            href="mailto:tripplesworld@gmail.com">mail to:tripplesworld@gmail.com</a></p>
+                                    <p>
+                                        Please visit our <a href="https://themeforest.net/user/tripples"><strong>profile
+                                        page</strong></a> or ask question in our <a href="https://support.themewinter.com/support-center/" target="_blank">Support Center</a>
+                                    </p>
 
                                     <strong>Support for my items includes:</strong>
                                     <ul>
@@ -795,7 +970,7 @@
                                  <p>Please, follow the article from <a href="Please, follow the below article for this : https://docs.elementor.com/article/184-cant-edit-with-elementor">Elementor Link</a></p>
                                  <p>Also Make sure you have the following Settings on your server:</p>
 
-                                <div><div id="highlighter_121698" class="syntaxhighlighter  html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="html plain">max_execution_time = 600 </code></div><div class="line number2 index1 alt1"><code class="html plain">upload_max_filesize = 32M</code></div><div class="line number3 index2 alt2"><code class="html plain">post_max_size = 48M</code></div><div class="line number4 index3 alt1"><code class="html plain">memory_limit = 256M</code></div><div class="line number5 index4 alt2"><code class="html plain">max_input_time = 300</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div></div></td></tr></tbody></table></div></div>
+                                <div><div id="highlighter_121698" class="syntaxhighlighter  html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="html plain">max_execution_time = 600 </code></div><div class="line number2 index1 alt1"><code class="html plain">upload_max_filesize = 32M</code></div><div class="line number3 index2 alt2"><code class="html plain">post_max_size = 48M</code></div><div class="line number4 index3 alt1"><code class="html plain">memory_limit = 512M</code></div><div class="line number5 index4 alt2"><code class="html plain">max_input_time = 300</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div></div></td></tr></tbody></table></div></div>
 
                             </div>
                         </div>
@@ -846,7 +1021,7 @@
                                     <pre class="brush: html">
 
 
-                                 Current Theme Version 1.0 (see Change log at the bottom of Themeforest Item Description Page)
+                                 Current Theme Version 1.7 (see Change log at the bottom of Themeforest Item Description Page)
 
                         
                                  </pre>
